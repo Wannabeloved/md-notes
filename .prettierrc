@@ -1,0 +1,15 @@
+{
+  "singleQuote": false,
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "quoteProps": "consistent",
+  "arrowParens": "avoid",
+  "printWidth": 100,
+  "semi": true,
+  "embeddedLanguageFormatting": "auto",
+  "endOfLine": "lf",
+  "plugins": [],
+  "overrides": []
+}
