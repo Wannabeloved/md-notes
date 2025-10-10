@@ -9,7 +9,7 @@ import { Providers } from "./providers";
 // import { EditorPage } from "./pages/EditorPage";
 import { CssBaseline } from "@mui/material";
 import { Navigate, Route, Routes } from "react-router";
-// import Layout from "./components/Layout";
+import Layout from "./components/Layout";
 // import { NewPage } from "./pages/NewPage";
 
 function App() {
@@ -18,9 +18,7 @@ function App() {
       <CssBaseline />
       <Providers>
         <Routes>
-          <Route
-          // element={<Layout />}
-          >
+          <Route element={<Layout />}>
             {/* <Route index element={<Navigate to="/new" />} /> */}
             {/* <Route path="new" element={<NewPage />} /> */}
             {/* <Route path=":id" element={<EditorPage />} /> */}
