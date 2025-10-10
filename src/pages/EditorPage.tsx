@@ -4,7 +4,7 @@ import { TreeCursor } from "web-tree-sitter";
 // import { Context } from "../providers/HighlightProvider";
 import { Context2 } from "../providers/TSProvider";
 import { AstViewer } from "../components/AstViewer";
-// import { Preview } from "../components/Preview";
+import { Preview } from "../components/Preview";
 import { Editor } from "../components/Editor";
 
 import Tabs from "@mui/material/Tabs";
@@ -75,7 +75,7 @@ export function EditorPage() {
           <Box sx={{ textAlign: "center" }}>
             <SplitButton />
           </Box>
-          {/* {treeCursor && <Preview treeCursor={treeCursor} />} */}
+          {treeCursor && <Preview treeCursor={treeCursor} />}
         </CustomTabPanel>
       </Grid>
       <Grid size={4}>
