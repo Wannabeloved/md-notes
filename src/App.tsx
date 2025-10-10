@@ -6,7 +6,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 import { Providers } from "./providers";
-// import { EditorPage } from "./pages/EditorPage";
+import { EditorPage } from "./pages/EditorPage";
 import { CssBaseline } from "@mui/material";
 import { Navigate, Route, Routes } from "react-router";
 import Layout from "./components/Layout";
@@ -21,7 +21,7 @@ function App() {
           <Route element={<Layout />}>
             <Route index element={<Navigate to="/new" />} />
             <Route path="new" element={<NewPage />} />
-            {/* <Route path=":id" element={<EditorPage />} /> */}
+            <Route path=":id" element={<EditorPage />} />
           </Route>
         </Routes>
       </Providers>
