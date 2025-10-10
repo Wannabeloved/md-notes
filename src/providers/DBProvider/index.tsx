@@ -2,8 +2,8 @@ import { createContext, useState, type ReactNode } from "react";
 
 import Dexie, { type EntityTable } from "dexie";
 
-import type { DBFile, File, FileTitle, CT } from "./types.ts";
-export type { File, DBFile };
+import type { DB, DBFile, File, FileTitle, CT } from "./types.ts";
+export type { DB, File, DBFile };
 
 const db = new Dexie("FilesDatabase") as Dexie & {
   files: EntityTable<
